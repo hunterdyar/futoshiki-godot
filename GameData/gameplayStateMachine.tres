@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dvn8g5i3ws46p"]
+
+[ext_resource type="Resource" uid="uid://lqyxl4mglfmi" path="res://GameData/States/state_gameplay.tres" id="1_1xfh2"]
+[ext_resource type="Script" path="res://Scripts/StateMachine/StateMachine.cs" id="1_dpo1v"]
+[ext_resource type="Resource" uid="uid://decfr6y4i1b2w" path="res://GameData/States/state_victory.tres" id="2_x72vt"]
+
+[resource]
+script = ExtResource("1_dpo1v")
+_states = Array[Resource]([ExtResource("1_1xfh2"), ExtResource("2_x72vt")])

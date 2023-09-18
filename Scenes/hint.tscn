@@ -11,3 +11,4 @@ text = ">"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("2_k0qin")
+_color = Color(0.686275, 0.686275, 0.686275, 1)

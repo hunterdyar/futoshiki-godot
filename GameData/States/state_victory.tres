@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://decfr6y4i1b2w"]
+
+[ext_resource type="Script" path="res://Scripts/StateMachine/State.cs" id="1_mdu76"]
+
+[resource]
+script = ExtResource("1_mdu76")
+_isDefault = false

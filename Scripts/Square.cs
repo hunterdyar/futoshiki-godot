@@ -1,9 +1,10 @@
 using Godot;
 using System;
+using futo.Scripts;
 
 public partial class Square : Button
 {
-	
+	[Export] public State GameplayState;
 	private GameManager _manager;
 	public Vector2I GridPos => _gridPos;
 	private Vector2I _gridPos;
@@ -25,6 +26,7 @@ public partial class Square : Button
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		
 	}
 
 	private void UpdateDisplay()
@@ -68,6 +70,9 @@ public partial class Square : Button
 	}
 	public void _on_pressed()
 	{
-		IncrementValue();
+		if (GameplayState.IsActive)
+		{
+			IncrementValue();
+		}
 	}
 }

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyjjr3o5t8rfa"]
+[gd_scene load_steps=4 format=3 uid="uid://dyjjr3o5t8rfa"]
 
 [ext_resource type="Theme" uid="uid://beqitxkqyk7am" path="res://Themes/gameplay_theme.tres" id="1_265c0"]
 [ext_resource type="Script" path="res://Scripts/Square.cs" id="2_yn5ty"]
+[ext_resource type="Resource" uid="uid://lqyxl4mglfmi" path="res://GameData/States/state_gameplay.tres" id="3_egys5"]
 
 [node name="button" type="Button"]
 offset_right = 100.0
@@ -10,5 +11,6 @@ theme = ExtResource("1_265c0")
 theme_override_font_sizes/font_size = 64
 text = "1"
 script = ExtResource("2_yn5ty")
+GameplayState = ExtResource("3_egys5")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

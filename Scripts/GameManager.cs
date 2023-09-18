@@ -2,12 +2,17 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using futo.Scripts;
 using Matrix = System.Collections.Generic.List<System.Collections.Generic.List<int>>;
 
 public partial class GameManager : Node2D
 {
 	//inspectors
 	[Export] public Difficulty difficulty;
+	
+	//I think in this case the state machine resource is absolutely useless, since everything has a reference to this class.
+	//this is a) unity-brain and b) i just wanted to figure resources out a bit.
+	[Export] private State VictoryState;
 	
 	private PackedScene _square = ResourceLoader.Load<PackedScene>("res://Scenes/square_button.tscn");
 	private PackedScene _hint = ResourceLoader.Load<PackedScene>("res://Scenes/hint.tscn");
@@ -70,6 +75,7 @@ public partial class GameManager : Node2D
 		if (_board.IsSolved())
 		{
 			GD.Print("You solved it!");
+			VictoryState.EnterState();
 		}
 	}
 

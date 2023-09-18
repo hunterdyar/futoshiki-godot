@@ -3,13 +3,16 @@ using System;
 
 public partial class Hint : Label
 {
+	[Export] private Color _color;
 	private Square _a;
 	private Square _b;
 	private bool _vertical;
+	private GameManager _manager;
 	private Board.Comparison _comparison;
 	//we expect a to be above or left of b.
 	public void Init(GameManager manager, Board.Comparison comp)
 	{
+		_manager = manager;
 		_a = manager.GetSquare(new Vector2I(comp.pos1.Item1,comp.pos1.Item2));
 		_b = manager.GetSquare(new Vector2I(comp.pos2.Item1, comp.pos2.Item2));
 
@@ -51,14 +54,23 @@ public partial class Hint : Label
 			}
 		}else if (manager.Board.gameType == Board.GameType.Renzoku)
 		{
-			if (comp.comparator == Board.Comparator.Adjacent)
-			{
-				Text = "*";
-			}else if (comp.comparator == Board.Comparator.NonAdjacent)
-			{
-				Text = "";
-			}
+			//handled in _Draw()
+			Text = "";
 		}
 	}
-	
+
+	public override void _Draw()
+	{
+		base._Draw();
+		switch (_manager.Board.gameType)
+		{
+			case Board.GameType.Renzoku:
+				if (_comparison.comparator == Board.Comparator.Adjacent)
+				{
+					DrawCircle(new Vector2(_manager.Gutter / 2, _manager.Gutter / 2), _manager.Gutter / 3,
+						_color);
+				}
+				break;
+		}
+	}
 }
