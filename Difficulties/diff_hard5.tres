@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dyqdddb0dwlf"]
+
+[ext_resource type="Script" path="res://Scripts/futo/Difficulty.cs" id="1_ghddp"]
+
+[resource]
+script = ExtResource("1_ghddp")
+gameType = 0
+size = 5
+comparisonFactor = 0.0
+numberFactor = 0.0
+numberRemovalMaxBuffer = 20

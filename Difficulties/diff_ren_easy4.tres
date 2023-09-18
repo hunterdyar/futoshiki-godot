@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cqrd2fg5uuo74"]
+
+[ext_resource type="Script" path="res://Scripts/futo/Difficulty.cs" id="1_mvis2"]
+
+[resource]
+script = ExtResource("1_mvis2")
+gameType = 1
+size = 4
+comparisonFactor = 0.35
+numberFactor = 0.3
+numberRemovalMaxBuffer = 20

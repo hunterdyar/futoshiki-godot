@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgtveemoms63"]
+
+[ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_26o6k"]
+[ext_resource type="Resource" uid="uid://cqrd2fg5uuo74" path="res://Difficulties/diff_ren_easy4.tres" id="2_6vlo7"]
+[ext_resource type="Script" path="res://Scripts/Input.cs" id="3_xtt3v"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_26o6k")
+difficulty = ExtResource("2_6vlo7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Input" type="Node" parent="."]
+script = ExtResource("3_xtt3v")

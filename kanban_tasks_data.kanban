@@ -1,0 +1,84 @@
+{
+	"categories": [
+		{
+			"uuid": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"title": "Task",
+			"color": "c99df6"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "50a06b37-f305-4901-a049-9e97b2d49dc1",
+			"title": "Todo",
+			"tasks": [
+				"832aa1ff-eb55-4ee1-9395-df54d15f02f9",
+				"b7b61bcf-3662-4bce-b0b0-ecddea30da77",
+				"02b40a0d-15bb-4114-b588-484384593739"
+			]
+		},
+		{
+			"uuid": "d80d0f47-0869-45e9-97f4-da3ca88ced53",
+			"title": "Doing",
+			"tasks": [
+				"e33b145e-f2bf-496a-a3d7-9f8956cedfba"
+			]
+		},
+		{
+			"uuid": "27a8585a-3a50-466c-b8a5-457f980767de",
+			"title": "Done",
+			"tasks": [
+				"e0eb57ba-8263-42ed-99dc-4969da55acb1"
+			]
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "832aa1ff-eb55-4ee1-9395-df54d15f02f9",
+			"title": "Create Icons for >, < and Adjacent",
+			"description": "",
+			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"steps": []
+		},
+		{
+			"uuid": "b7b61bcf-3662-4bce-b0b0-ecddea30da77",
+			"title": "Change Border for border",
+			"description": "",
+			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"steps": []
+		},
+		{
+			"uuid": "02b40a0d-15bb-4114-b588-484384593739",
+			"title": "Create Selector",
+			"description": "",
+			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"steps": []
+		},
+		{
+			"uuid": "e0eb57ba-8263-42ed-99dc-4969da55acb1",
+			"title": "Move square size to manager and write getPos functions",
+			"description": "",
+			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"steps": []
+		},
+		{
+			"uuid": "e33b145e-f2bf-496a-a3d7-9f8956cedfba",
+			"title": "Create Input Class",
+			"description": "",
+			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"50a06b37-f305-4901-a049-9e97b2d49dc1"
+			],
+			[
+				"d80d0f47-0869-45e9-97f4-da3ca88ced53"
+			],
+			[
+				"27a8585a-3a50-466c-b8a5-457f980767de"
+			]
+		]
+	}
+}

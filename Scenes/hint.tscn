@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://djakthjhxbxom"]
+
+[ext_resource type="Theme" uid="uid://beqitxkqyk7am" path="res://Themes/gameplay_theme.tres" id="1_h7g4u"]
+[ext_resource type="Script" path="res://Scripts/Hint.cs" id="2_k0qin"]
+
+[node name="hint" type="Label"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_h7g4u")
+text = ">"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_k0qin")
