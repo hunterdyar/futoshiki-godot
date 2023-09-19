@@ -58,6 +58,20 @@ public partial class Square : Button
 		UpdateDisplay();
 	}
 
+	public void SetValue(int val)
+	{
+		if (_manager.Board.GetValue(_gridPos.X, _gridPos.Y) == val && val != 0)
+		{
+			val = 0;
+		}
+		if (val > _manager.difficulty.size || val < 0)
+		{
+			return;
+		}
+		_manager.Board.SetValue(_gridPos.X,_gridPos.Y,val,false);
+		AfterValueChanged();
+	}
+
 	private void IncrementValue()
 	{
 		int v = GetValue()+1;
