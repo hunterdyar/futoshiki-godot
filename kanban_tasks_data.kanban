@@ -13,7 +13,8 @@
 			"tasks": [
 				"832aa1ff-eb55-4ee1-9395-df54d15f02f9",
 				"b7b61bcf-3662-4bce-b0b0-ecddea30da77",
-				"02b40a0d-15bb-4114-b588-484384593739"
+				"02b40a0d-15bb-4114-b588-484384593739",
+				"0dff0c47-56d8-4028-8ce8-654fbc862252"
 			]
 		},
 		{
@@ -64,7 +65,7 @@
 		},
 		{
 			"uuid": "e33b145e-f2bf-496a-a3d7-9f8956cedfba",
-			"title": "Create Input Class",
+			"title": "Create Input Class, square.",
 			"description": "",
 			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
 			"steps": []
@@ -79,6 +80,13 @@
 		{
 			"uuid": "33f04118-0504-428a-bd80-06ef9f6ac3f8",
 			"title": "Resource based state machine?",
+			"description": "",
+			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"steps": []
+		},
+		{
+			"uuid": "0dff0c47-56d8-4028-8ce8-654fbc862252",
+			"title": "Get rid of Resource state machine and make it a class. Then use signals for the state changes",
 			"description": "",
 			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
 			"steps": []
