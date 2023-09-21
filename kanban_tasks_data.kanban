@@ -21,7 +21,6 @@
 			"uuid": "d80d0f47-0869-45e9-97f4-da3ca88ced53",
 			"title": "Doing",
 			"tasks": [
-				"e33b145e-f2bf-496a-a3d7-9f8956cedfba",
 				"49a84120-0977-40ab-b9d0-8b7c016b654d"
 			]
 		},
@@ -30,14 +29,16 @@
 			"title": "Done",
 			"tasks": [
 				"e0eb57ba-8263-42ed-99dc-4969da55acb1",
-				"33f04118-0504-428a-bd80-06ef9f6ac3f8"
+				"33f04118-0504-428a-bd80-06ef9f6ac3f8",
+				"e33b145e-f2bf-496a-a3d7-9f8956cedfba",
+				"097c4bd8-6449-4cd6-9da4-15af79846487"
 			]
 		}
 	],
 	"tasks": [
 		{
 			"uuid": "832aa1ff-eb55-4ee1-9395-df54d15f02f9",
-			"title": "Create Icons for >, < and Adjacent",
+			"title": "Draw Icons for >, < and Adjacent",
 			"description": "",
 			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
 			"steps": []
@@ -87,6 +88,13 @@
 		{
 			"uuid": "0dff0c47-56d8-4028-8ce8-654fbc862252",
 			"title": "Get rid of Resource state machine and make it a class. Then use signals for the state changes",
+			"description": "",
+			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
+			"steps": []
+		},
+		{
+			"uuid": "097c4bd8-6449-4cd6-9da4-15af79846487",
+			"title": "Mouse input",
 			"description": "",
 			"category": "876b8c4e-5517-4b6e-a2ae-6b174b7bc1a2",
 			"steps": []

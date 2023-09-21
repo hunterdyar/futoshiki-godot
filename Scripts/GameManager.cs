@@ -84,8 +84,8 @@ public partial class GameManager : Node2D
 	{
 		var cam = GetNode<Camera2D>("Camera2D");
 		var s = _allSquares[0];
-		float w = difficulty.size * s.Size.X + (difficulty.size - 1) * _gutter;
-		float h = difficulty.size * s.Size.Y + (difficulty.size - 1) * _gutter;
+		float w = difficulty.size * GridSize + (difficulty.size - 1) * _gutter;
+		float h = difficulty.size * GridSize + (difficulty.size - 1) * _gutter;
 		cam.Position = new Vector2(w / 2, h / 2);
 
 		//todo: calculate scale to fit.
@@ -95,6 +95,15 @@ public partial class GameManager : Node2D
 	{
 		return new Vector2(GridSize * gridPos.X + gridPos.X * Gutter, GridSize * gridPos.Y + gridPos.Y * Gutter);
 	}
+
+	// public Vector2I GetGridPosition(Vector2 childPos)
+	// {
+	// 	// pos = (GridSize * gridPos.X) + (gridPos.X * Gutter);
+	// 	// pos / gridpos = GridSize + _gutter;
+	// 	// 1/gridpos = (GridSize+_gutter)/pos
+	//
+	// 	
+	// }
 
 	public Square GetSquare(Vector2I pos)
 	{
@@ -107,5 +116,15 @@ public partial class GameManager : Node2D
 			GD.PrintErr("Can't get square",pos);
 			return null;
 		}
+	}
+
+	public bool TryGetNodeAtViewPosition(Vector2 viewPos,out Square square)
+	{
+		square = null;
+		//already i want to write a utility class/extension methods
+		var childPos = GetViewportTransform().AffineInverse() * viewPos;
+		var x = Mathf.FloorToInt(childPos.X / (GridSize + _gutter));
+		var y = Mathf.FloorToInt(childPos.Y / (GridSize + _gutter));
+		return _squareMap.TryGetValue(new Vector2I(x, y), out square);
 	}
 }
